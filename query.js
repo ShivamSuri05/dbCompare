@@ -28,7 +28,7 @@ function connection2(){
 });
 hitquery();
 }
-// node app.js '{"host":"localhost","user":"shivam","password":"qwerty777","database":"oldDatabase"}' '{"host":"localhost","user":"shivam","password":"qwerty777","database":"newDatabase"}'
+
 function hitquery(){
     con1.connect(function(err) {
         if (err) throw err;
