@@ -1,5 +1,3 @@
-
-// pick up queries from input folder
 // fun(db1,db2,query) async function which will run simultaneously
 // export output1 and output2
 
