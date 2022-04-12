@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-let Config = {}
-
-function configure(db){
-    Config.name = db.name
-    Config.age = db.age
-    console.log('from DB2')
-    show();
-}
-function show(db){
-    console.log("From show")
-    console.log(Config)
-=======
 let Config = {
     host: "localhost",
     user: "default",
@@ -23,7 +10,6 @@ function configure(db){
     Config.password = db.password
     Config.database = db.database
     console.log('from DB2')
->>>>>>> 00654b7 (Added functionality for reading input folder and done some relevant changes)
 }
 
 module.exports = {configure,Config};
