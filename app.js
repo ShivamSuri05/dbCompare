@@ -1,22 +1,13 @@
-const ConfigDB1 = require('./database1/config')
+const ConfigDB1 = require('./database1/config').configure
 const ConfigDB2 = require('./database2/config').configure
-const db2 = require('./query');
-//console.log("Hello")
+const db1 = require('./query').connection1;
+const db2 = require('./query').connection2;
 
 console.log(process.argv)
 
-//const db1 = JSON.parse(process.argv[2])
-//const db2 = process.argv[3]
-
-// console.log(db1)
-// console.log(db1.name)
-// console.log(db1.age)
-// console.log(db2)
-// console.log(typeof(db2))
-// console.log(db2.name)
-
 if(process.argv[2]){
     ConfigDB1(JSON.parse(process.argv[2]));
+    db1();
 }
 else{
     console.error("No configurations found for DB1. Please Enter Database Configuration")
@@ -24,7 +15,7 @@ else{
 
 if(process.argv[3]){
     ConfigDB2(JSON.parse(process.argv[3]));
-    console.log('here',db2)
+    db2();
 }
 else{
     console.error("No configurations found for DB2. Please Enter Database Configuration")
