@@ -1,5 +1,5 @@
-const ConfigDB1 = require('./database1/config').configure
-const ConfigDB2 = require('./database2/config').configure
+const ConfigDB1 = require('./config/configDB1').configure
+const ConfigDB2 = require('./config/configDB2').configure
 const db1 = require('./query').connection1;
 const db2 = require('./query').connection2;
 

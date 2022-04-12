@@ -3,8 +3,8 @@
 // fun(db1,db2,query) async function which will run simultaneously
 // export output1 and output2
 
-let config1 = require('./database1/config').Config
-let config2 = require('./database2/config').Config
+let config1 = require('./config/configDB1').Config
+let config2 = require('./config/configDB2').Config
 var mysql = require('mysql2');
 // make connection to both dbs
 
